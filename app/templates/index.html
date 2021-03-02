@@ -1,0 +1,10 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+    <p>These are the FIVE ELEMENTS</p>
+    <ul>
+        {% for key, item in f_elements.items() %}
+          <li>{{ key }} - {{ item }}</li>
+        {% endfor %}               
+    </ul>
+{%  endblock content  %}
